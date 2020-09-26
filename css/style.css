@@ -14,9 +14,8 @@ body {
 nav {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    
+    background-color: rgb(255, 255, 255);
 }
-.bg-light {}
 /*hero*/
 .bgherobookmark {
     background-color: #7E82F9;
@@ -34,12 +33,7 @@ nav {
     color: #5457af;
 }
 /*dailychallenge*/
-.bgchallengesquare {
-    background-image: url(../images/bgchallengesquare.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-}
+
 /*margins*/
 .containermargintop {
     margin-top: 50px;
@@ -54,10 +48,6 @@ nav {
     justify-content: center;
 }
 .bgmentorsquare {
-    background-image: url(../images/bgmentorsquare.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     display: flex;
 }
 /*covid*/
@@ -75,9 +65,10 @@ nav {
 .marginleft30 {
     margin-left: 30px;
 }
-.bgcalendarsquare {
+/*.bgcalendarsquare {
     background-image: url(../images/bgcalendarsquare.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+}*/
+/*footer*/
