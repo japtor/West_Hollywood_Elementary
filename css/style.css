@@ -16,6 +16,9 @@ nav {
     font-weight: bold;
     background-color: rgb(255, 255, 255);
 }
+.wizard-logo {
+    width: 175px;
+}
 /*hero*/
 .bgherobookmark {
     background-color: #7E82F9;
@@ -58,25 +61,38 @@ nav {
     padding-bottom: 75px;
     padding-right: 50px;
     padding-left: 75px;
+    flex-wrap: nowrap;
+}
+.challengebookmark img {
+    width: 100%;
 }
 /*margins*/
 .containermargintop {
-    margin-top: 50px;
+    margin-top: 30px;
 }
-.marginright30 {
-    margin-right: 30px;
-}
+
 /*mentoring*/
 .mentortxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .bgmentorsquare {
     display: flex;
 }
-.mentorimg img{
-    border-radius: 5px;
+.bgmentor {
+    background-image: url(../images/mentoring.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.mentorbookmark {
+    background-image: url(../images/mentoringbookmark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 /*covid*/
 .bggrabngo {
@@ -102,5 +118,27 @@ nav {
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
     box-shadow: -2px -4px 10px rgba(0, 0, 0, 0.15);
 }
-/*footer*/
+/*Media 
 
+@media (min-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .challengebookmark {
+        transform: rotate(90deg);
+    }
+    .challengebookmark img {
+        width: 150%;
+    }
+    .containermargintop {
+        margin-top: 0;
+    }
+    .bgchallengesquare {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+        flex-wrap: nowrap;
+    }
+}
+*/

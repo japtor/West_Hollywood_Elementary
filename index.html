@@ -13,12 +13,11 @@
 <!--navigation-->
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="d-flex flex-grow-1">
-        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
         <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-            <img src="images/wizard-logo-drk.png" width="175px" alt="wizard logo">
+            <img src="images/wizard-logo-drk.png" alt="wizard logo" class="wizard-logo">
         </a>
         <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-            <img src="//placehold.it/40?text=LOGO" alt="logo">
+            <img src="images/wizard-logo-drk-mobile.png" alt="logo">
         </a>
         <div class="w-100 text-right">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -91,7 +90,7 @@
 <div class="container bg-hero">
     <div class="row no-gutters">
         <div class="col-sm-2 bgherobookmark" data-aos="fade-up"></div>
-        <div class="col-sm-10" data-aos="fade-up">
+        <div class="col col-sm-10" data-aos="fade-up">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -147,13 +146,13 @@
 </div>
 <!--daily challenge-->
 <div class="container containermargintop">
-    <div class="row align-items-center">
-            <div class="marginright30">
-                <img src="images/challengebookmark.png" alt="daily challenges title" data-aos="slide-up">
-            </div>
-        <div class="card-deck bgchallengesquare">
+    <div class="row align-items-center dailychallenge">
+        <div class="col-sm-3 challengebookmark" >
+            <img src="images/challengebookmark.png" alt="daily challenges" data-aos="slide-up">
+        </div>
+        <div class="card-deck col-sm-9 bgchallengesquare">
 
-            <div class="card text-center" style="width: 14rem;" data-aos="slide-up">
+            <div class="card text-center cardwidth" style="width: 14rem;" data-aos="slide-up">
                 <img src="images/dailychallenge1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">GET MOVING!</h5>
@@ -162,7 +161,7 @@
                 </div>
             </div>
 
-            <div class="card text-center" style="width: 14rem;" data-aos="slide-up">
+            <div class="card text-center cardwidth" style="width: 14rem;" data-aos="slide-up">
                 <img src="images/dailychallenge2.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">GET CREATIVE!</h5>
@@ -171,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="card text-center" style="width: 14rem;" data-aos="slide-up">
+            <div class="card text-center cardwidth" style="width: 14rem;" data-aos="slide-up">
                 <img src="images/dailychallenge3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">GET SOCIAL!</h5>
@@ -179,24 +178,19 @@
                     <a href="#" class="btn btn-outline-info">Let's Hang!</a>
                 </div>
             </div>
+        </div>    
     </div>
 </div>
 <!--extra mentoring-->
 <div class="container containermargintop">
-    <div class="row">
-        <div class="col-sm-4 mentortxt">
+    <div class="row mentorpadding">
+        <div class="col col-md-4 mentortxt">
             <h2 data-aos="fade-up">Visit the Learning Hub</h2>
             <p data-aos="fade-up">For tech support, teaching resources, and more!</p>
-            <a href="#" class="btn btn-outline-warning" data-aos="fade-up">Get Support</a>
+            <a href="getsupport.html" class="btn btn-outline-warning" data-aos="fade-up">Get Support</a>
         </div>
-        <div class="bgmentorsquare col-sm-8">
-            <div>
-                <img src="images/mentoringbookmark.png" alt="extra mentoring" data-aos="slide-left">
-            </div>
-            <div>
-                <img src="images/mentoring.png" alt="mentoring support" data-aos="slide-left">
-            </div>
-        </div>
+        <div class="col-md-3 mentorbookmark"></div>
+        <div class="col-md-5 bgmentor" data-aos="slide-left"></div>
     </div>
 </div>
 <!--covid-19-->

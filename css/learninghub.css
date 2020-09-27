@@ -1,0 +1,39 @@
+/*text*/
+h1, h2, h3, h4, h5 {font-family: 'Quicksand', sans-serif;}
+body, a, .card-subtitle {font-family: 'Montserrat', sans-serif;}
+/*background*/
+body {
+    background-color: #F8F8F8;
+}
+/*nav*/
+.yellowdivider {
+    color: #FFE08D;
+    font-weight: 700;
+    margin-right: 10px;
+}
+nav {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.wizard-logo {
+    width: 175px;
+}
+/*vertical nav*/
+.flex-column {
+    background-color: #FFE08D;
+}
+/*header*/
+.bgheader {
+    background-image: url(../images/bgheader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*tabs*/
+.border {
+    border: solid 1px  #FFE08D;
+    border-radius: 100px;
+}
