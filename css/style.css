@@ -1,6 +1,6 @@
 /*text*/
 h1, h2, h3, h4, h5 {font-family: 'Quicksand', sans-serif;}
-body, a {font-family: 'Montserrat', sans-serif;}
+body, a, .card-subtitle {font-family: 'Montserrat', sans-serif;}
 /*background*/
 body {
     background-color: #F8F8F8;
@@ -23,8 +23,14 @@ nav {
 .herobookmark-bottom {
     background-color: #7E82F9;
     padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15px;
+    color: white;
+    text-align: end;
+}
+.herotxt {
+    margin-right: 10%;
+}
+.ruler {
+    margin-bottom: 0;
 }
 .carousel-caption {
     background-color: rgba(255, 255, 255, 0.692);
@@ -32,8 +38,27 @@ nav {
 .carousel-caption p,.carousel-caption h5 {
     color: #5457af;
 }
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 /*dailychallenge*/
-
+.bgchallengesquare {
+    background-image: url(../images/bgchallengesquare.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-right: 50px;
+    padding-left: 75px;
+}
 /*margins*/
 .containermargintop {
     margin-top: 50px;
@@ -56,6 +81,8 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,10 +92,9 @@ nav {
 .marginleft30 {
     margin-left: 30px;
 }
-/*.bgcalendarsquare {
-    background-image: url(../images/bgcalendarsquare.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}*/
+.calendarcardshadow:hover  {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px -4px 10px rgba(0, 0, 0, 0.15);
+}
 /*footer*/
+
