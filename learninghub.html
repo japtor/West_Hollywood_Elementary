@@ -122,7 +122,7 @@
     <ul class="nav nav-fill">
         <p>Grade level:</p>
         <li class="nav-item">
-        <a class="nav-link active yellowcircle" href="#">K</a>
+        <a class="nav-link active" href="#">K</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="#">1</a>
@@ -145,41 +145,87 @@
   <div class="container marginbottom">
   <div class="row">
     <div class="card-deck">
-      <div class="card welcomebg cardshadow" data-aos="flip-up">
+      <div class="card yellowborder cardshadow" data-aos="flip-up">
         <div class="card-body">
             <h5 class="card-title">Welcome to Kindergarten Science!</h5>
         </div>
       </div>
 
-      <div class="card text-center cardshadow cardbg" data-aos="flip-up">
+      <div class="card yellowborder text-center cardshadow cardhover" data-aos="flip-up">
         <div class="profileimg">
           <img src="images/mr-jones.png" alt="Mr. Jones" width="94px">
         </div>
         <div class="card-body">
-            <h5 class="card-title">Ask Mr. Jones</h5>
+            <h6 class="card-title">Ask Mr. Jones</h6>
         </div>
       </div>
       
-      <div class="card text-center cardshadow cardbg" data-aos="flip-up">
+      <div class="card yellowborder text-center cardshadow cardhover" data-toggle="modal" data-target="#staticBackdrop" data-aos="flip-up">
         <div class="profileimg">
           <img src="images/ms-katie.png" alt="Ms. Katie" width="94px">
         </div>
         <div class="card-body">
-            <h5 class="card-title">Ask Ms. Katie</h5>
+            <h6 class="card-title">Ask Ms. Katie</h6>
         </div>
       </div>
 
-      <div class="card text-center cardshadow cardbg" data-aos="flip-up">
+      <div class="card yellowborder text-center cardshadow cardhover" data-aos="flip-up">
         <div class="profileimg">
           <img src="images/ms-sarah.png" alt="Ms. Sarah" width="94px">
         </div>
         <div class="card-body">
-            <h5 class="card-title">Ask Ms. Sarah</h5>
+            <h6 class="card-title">Ask Ms. Sarah</h6>
         </div>
       </div>
     </div>
   </div>
   </div>
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+          <div class="col-md-2 yellowborder"> 
+            <img src="images/ms-katie.png" alt="Ms. Katie" width="94px">
+          </div>
+          <div class="col-md-8">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1"><h5>Ask Ms. Katie</h5></label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@email.com">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Topic</option>
+                    <option>English</option>
+                    <option>Math</option>
+                    <option>Science</option>
+                    <option>Social Studies</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Question…"></textarea>
+                </div>
+              </form>
+          </div>
+          <div class="col-md-2 vertalign">
+            <button type="button" class="btn btn-outline-warning">Send</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!--lessons-->
   <div class="greybg paddingtop20">
     <div class="container">

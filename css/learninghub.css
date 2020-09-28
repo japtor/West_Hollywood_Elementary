@@ -1,6 +1,6 @@
 /*text*/
 h1, h2, h3, h4, h5, h6 {font-family: 'Quicksand', sans-serif;}
-body, a, .card-subtitle {font-family: 'Montserrat', sans-serif;}
+body, a, .card-subtitle, .form-group {font-family: 'Montserrat', sans-serif;}
 /*background*/
 body {
     background-color: #F8F8F8;
@@ -24,7 +24,7 @@ nav {
     background-color: #FFE08D;
 }
 .paddingtop {
-    padding-top: 200px;
+    padding-top: 99px;
     padding-bottom: 200px;
 }
 .activebg {
@@ -59,12 +59,13 @@ nav {
 .bold {
     font-weight: bold;
 }
-/*tabs*/
+/*tabs
 .yellowcircle {
     border: solid 3px #FFE08D;
     border-radius: 100px;
     width: 10%;
-}
+} */
+
 /*lessons*/
 .greybg {
     background-color: #F4F4F4;
@@ -109,6 +110,25 @@ nav {
 }
 .text-muted {
     font-weight: lighter;
+}
+.yellowborder {
+    background-image: url(../images/yellow-border.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.col-md-12 {
+    border-left: solid 10px #FFE08D;
+}
+.cardhover:hover {
+    box-shadow: none;
+}
+/*modal*/
+.vertalign {
+    display: flex;
+    align-items: flex-end;
+}
+#exampleFormControlSelect1 {
+    background-color: #FFE08D;
 }
 /*footer (yes this code is garbage)*/
 #footer {
