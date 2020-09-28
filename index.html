@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
     <title>West Hollywood Elementary</title>
 </head>
 <body>
@@ -89,8 +89,8 @@
 <!--hero-->
 <div class="container bg-hero">
     <div class="row no-gutters">
-        <div class="col-sm-2 bgherobookmark" data-aos="fade-up"></div>
-        <div class="col col-sm-10" data-aos="fade-up">
+        <div class="col-md-2 bg-lightblue" data-aos="fade-up"></div>
+        <div class="col col-md-10" data-aos="fade-up">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -134,7 +134,7 @@
               </div>
         </div>
     </div>
-    <div class="herobookmark-bottom">
+    <div class="heroruler-bottom bg-lightblue">
         <div class="herotxt">
             <h3 data-aos="slide-left">Welcome to West Hollywood</h3>
             <h1 data-aos="slide-left" data-aos-offset="50">Elementary</h1>
@@ -146,60 +146,65 @@
 </div>
 <!--daily challenge-->
 <div class="container containermargintop">
-    <div class="row align-items-center dailychallenge">
-        <div class="col-sm-3 challengebookmark" >
-            <img src="images/challengebookmark.png" alt="daily challenges" data-aos="slide-up">
-        </div>
-        <div class="card-deck col-sm-9 bgchallengesquare">
-
-            <div class="card text-center cardwidth" style="width: 14rem;" data-aos="slide-up">
-                <img src="images/dailychallenge1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">GET MOVING!</h5>
-                    <p class="card-subtitle mb-2 text-muted">Share your fitness at home by uploading your daily challenge video.</p>
-                    <a href="#" class="btn btn-outline-info">Share Video</a>
-                </div>
+  <div class="row align-items-center dailychallenge">
+      <div class="card-deck challengebookmark">
+        <img src="images/challengebookmark.png" alt="daily challenges" data-aos="slide-up">
+      </div>
+      <div class="col-md-9 bg-challengesquare">
+        <div class="row">
+          <div class="card-deck">
+            <div class="card text-center" data-aos="slide-up">
+              <img src="images/dailychallenge1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">GET MOVING!</h5>
+                <p class="card-subtitle mb-2 text-muted">Share your fitness at home by uploading your daily challenge video.</p>
+                <a href="#" class="btn btn-outline-info">Share Video</a>
+              </div>
             </div>
-
-            <div class="card text-center cardwidth" style="width: 14rem;" data-aos="slide-up">
-                <img src="images/dailychallenge2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">GET CREATIVE!</h5>
-                    <p class="card-subtitle mb-2 text-muted">Share your artwork by uploading your daily challenge photo.</p>
-                    <a href="#" class="btn btn-outline-info">Share Artwork</a>
-                </div>
+            <div class="card text-center" data-aos="slide-up">
+              <img src="images/dailychallenge2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">GET CREATIVE!</h5>
+                <p class="card-subtitle mb-2 text-muted">Share your artwork by uploading your daily challenge photo.</p>
+                <a href="#" class="btn btn-outline-info">Share Artwork</a>
+              </div>
             </div>
-
-            <div class="card text-center cardwidth" style="width: 14rem;" data-aos="slide-up">
-                <img src="images/dailychallenge3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">GET SOCIAL!</h5>
-                    <p class="card-subtitle mb-2 text-muted">Play games with classmates.</p>
-                    <a href="#" class="btn btn-outline-info">Let's Hang!</a>
-                </div>
-            </div>
-        </div>    
-    </div>
+            <div class="card text-center" data-aos="slide-up">
+              <img src="images/dailychallenge3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">GET SOCIAL!</h5>
+                <p class="card-subtitle mb-2 text-muted">Play games with classmates.</p>
+                <a href="#" class="btn btn-outline-info">Let's Hang!</a>
+              </div>
+            </div>  
+          </div>
+        </div>  
+      </div>
+  </div>
 </div>
 <!--extra mentoring-->
 <div class="container containermargintop">
-    <div class="row mentorpadding">
-        <div class="col col-md-4 mentortxt">
+    <div class="row">
+        <div class="col-md-4 mentortxt">
             <h2 data-aos="fade-up">Visit the Learning Hub</h2>
             <p data-aos="fade-up">For tech support, teaching resources, and more!</p>
             <a href="learninghub.html" class="btn btn-outline-warning" data-aos="fade-up">Get Support</a>
         </div>
-        <div class="col-md-3 mentorbookmark"></div>
-        <div class="col-md-5 bgmentor" data-aos="slide-left"></div>
+        <div class="col-md-3 mentorbookmark">
+          <img src="images/mentoringbookmark.png" alt="Extra Mentoring">
+        </div>
+        <div class="col-md-5 mentorimg" data-aos="slide-left">
+          <img src="images/mentoring.png" alt="mentoring">
+        </div>
     </div>
 </div>
 <!--covid-19-->
 <div class="container containermargintop">
     <div class="row align-items-center">
-        <div class="col-sm-4">
+        <div class="col-md-4">
             <img src="images/covidbookmark.png" alt="covid-19 resources" data-aos="slide-right">
         </div>
-        <div class="col-sm-8 bggrabngo">
+        <div class="col-md-8 bg-covidsquare">
             <h2 data-aos="fade-up">Grab and Go Meals</h2>
             <p data-aos="fade-up">breakfast and lunch available 7-10AM</p>
             <img src="images/grabngo.jpg" width="60%" alt="lunch bag to go" data-aos="fade-up">
@@ -211,7 +216,7 @@
     <div class="row bgcalendarsquare align-items-center">
         <div class="card-deck">
 
-            <div class="card text-center h-100 calendarcardshadow" style="width: 16rem;" data-aos="flip-up">
+            <div class="card text-center h-100 calendarcardshadow" data-aos="flip-up">
                 <img src="images/conference.png" class="card-img-top" alt="parent conference">
                 <div class="card-body">
                     <h5 class="card-title">PARENT CONFERENCE</h5>
@@ -222,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="card text-center h-100 calendarcardshadow" style="width: 16rem;" data-aos="flip-up">
+            <div class="card text-center h-100 calendarcardshadow" data-aos="flip-up">
                 <img src="images/halloween.png" alt="halloween pumpkins" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">VIRTUAL COSTUME CONTEST</h5>
@@ -233,7 +238,7 @@
                 </div>
             </div>
 
-            <div class="card text-center h-100 calendarcardshadow" style="width: 16rem;" data-aos="flip-up">
+            <div class="card text-center h-100 calendarcardshadow" data-aos="flip-up">
                 <img src="images/holiday.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">WINTER BREAK</h5>
@@ -243,8 +248,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="marginleft30">
-            <img src="images/eventsbookmark.png" alt="Upcoming Events" data-aos="slide-left">
+            <div class="eventimg">
+              <img src="images/eventsbookmark.png" alt="Upcoming Events" data-aos="slide-left">
             </div>
         </div>
     </div>

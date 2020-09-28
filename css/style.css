@@ -2,9 +2,7 @@
 h1, h2, h3, h4, h5 {font-family: 'Quicksand', sans-serif;}
 body, a, .card-subtitle {font-family: 'Montserrat', sans-serif;}
 /*background*/
-body {
-    background-color: #F8F8F8;
-}
+body {background-color: #F8F8F8;}
 /*nav*/
 .purpledivider {
     color: #7E82F9;
@@ -20,11 +18,10 @@ nav {
     width: 175px;
 }
 /*hero*/
-.bgherobookmark {
+.bg-lightblue {
     background-color: #7E82F9;
 }
-.herobookmark-bottom {
-    background-color: #7E82F9;
+.heroruler-bottom {
     padding-top: 20px;
     color: white;
     text-align: end;
@@ -41,6 +38,7 @@ nav {
 .carousel-caption p,.carousel-caption h5 {
     color: #5457af;
 }
+/*
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -50,9 +48,9 @@ nav {
       padding-right: 0;
       padding-left: 0;
     }
-  }
+  }  */
 /*dailychallenge*/
-.bgchallengesquare {
+.bg-challengesquare {
     background-image: url(../images/bgchallengesquare.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -60,8 +58,7 @@ nav {
     padding-top: 75px;
     padding-bottom: 75px;
     padding-right: 50px;
-    padding-left: 75px;
-    flex-wrap: nowrap;
+    padding-left: 50px;
 }
 .challengebookmark img {
     width: 100%;
@@ -70,7 +67,6 @@ nav {
 .containermargintop {
     margin-top: 30px;
 }
-
 /*mentoring*/
 .mentortxt {
     display: flex;
@@ -79,23 +75,15 @@ nav {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.bgmentorsquare {
+.challengebookmark img, .mentorbookmark img, .mentorimg img, .eventimg img{
+    width: 100%;
+}
+.mentorimg {
     display: flex;
-}
-.bgmentor {
-    background-image: url(../images/mentoring.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.mentorbookmark {
-    background-image: url(../images/mentoringbookmark.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    align-items: center;
 }
 /*covid*/
-.bggrabngo {
+.bg-covidsquare {
     background-image: url(../images/bgcovidsquare.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -107,18 +95,14 @@ nav {
     justify-content: center;
     align-items: center;
 }
-.bggrabngo img {
+.bg-covidsquare img, .mentorimg img {
     border-radius: 5px;
 }
 /*events*/
-.marginleft30 {
-    margin-left: 30px;
-}
 .calendarcardshadow:hover  {
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
     box-shadow: -2px -4px 10px rgba(0, 0, 0, 0.15);
 }
-
 /*footer (yes this code is garbage)*/
 #footer {
     height: auto;
@@ -135,43 +119,34 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
   #footer h3, #footer p {
     padding: 0;
     margin: 0;
   }
-  
   #footer h3 {
     font-size: 30px;
     font-weight: 600;
-  }
-  
+  } 
   #footer p {
     font-size: 24px;
     font-weight: 400;
-  }
-  
+  } 
   .footerAddy {
     display: flex;
     flex-direction: row;
   }
-  
   .footerAddy img {
     height: 6.5rem;
   }
-  
   .footerAddy>div, #footerSocial {
     padding: .5rem;
   }
-  
   #footerSocial {
     text-align: center;
   }
-  
   #footerSocial img {
     padding: .25rem;
   }
-  
   .socialIcons {
     display: flex;
     flex-direction: row;
@@ -200,4 +175,5 @@ nav {
         flex-wrap: nowrap;
     }
 }
+
 */
