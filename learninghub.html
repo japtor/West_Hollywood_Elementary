@@ -110,7 +110,7 @@
   </div>
 
   <!--col 10-->
-  <div class="col-md-10 no-gutter">
+  <div class="col-md-10">
     <!--header-->
     <div class="container bgheader marginbottom">
       <h1 class="bold">LEARNING HUB</h1>
@@ -180,7 +180,7 @@
     </div>
   </div>
   </div>
-  <!-- Modal -->
+  <!-- modal email-->
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -225,7 +225,6 @@
     </div>
   </div>
 </div>
-
   <!--lessons-->
   <div class="greybg paddingtop20">
     <div class="container">
@@ -242,7 +241,7 @@
           <div class="row marginbottom">
             <div class="col-md-12 whitebg paddingaround align-items-center">
               <p>Tornadoes In Nature II</p>
-              <button type="button" class="datebutton"><p class="text-muted">09/09/20</p></button>
+              <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#staticVideo" data-video="https://www.youtube.com/watch?v=iMWoYPaQx0Q">09/09/20</button>
             </div>
           </div>
         </div>
@@ -251,7 +250,7 @@
           <div class="row marginbottom">
             <div class="col-md-12 whitebg paddingaround align-items-center">
               <p>Tornadoes In Nature I</p>
-              <button type="button" class="datebutton"><p class="text-muted">09/08/20</p></button>
+              <button type="button" class="btn btn-outline-warning">09/08/20</button>
             </div>
           </div>
         </div>
@@ -262,6 +261,24 @@
   </div>
 </div>
 </div>
+  <!-- Modal video-->
+  <div class="modal fade" id="staticVideo"  tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body  yellowborder">
+          <h5 class="marginbottom50"> Tornadoes In Nature II</h5>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/iMWoYPaQx0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <!--footer-->
 <div>
   <div id="footer">
@@ -292,5 +309,23 @@
 <script>
   AOS.init();
 </script>
+<script>
+  $(document).ready(function() {
+      // Set iframe attributes when the show instance method is called
+      $("#videoModal").on("show.bs.modal", function(event) {
+          let button = $(event.relatedTarget); // Button that triggered the modal
+          let url = button.data("video");      // Extract url from data-video attribute
+          $(this).find("iframe").attr({
+              src : url,
+              allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          });
+      });
+  
+      // Remove iframe attributes when the modal has finished being hidden from the user
+      $("#videoModal").on("hidden.bs.modal", function() {
+          $("#videoModal iframe").removeAttr("src allow");
+      });
+  });
+  </script>
 </body>
 </html>

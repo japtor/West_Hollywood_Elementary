@@ -95,21 +95,11 @@ nav {
 .marginleft {
     margin-left: 60%;
 }
-.datebutton {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 0.475rem;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-    font-size: 1rem;
-    border-radius: .25rem;
-    background-color: #FFE08D;
-    border: none;
-    margin-left: 60%;
-}
 .text-muted {
     font-weight: lighter;
+}
+.btn-outline-warning {
+    margin-left: 65%;
 }
 .yellowborder {
     background-image: url(../images/yellow-border.png);
@@ -129,6 +119,10 @@ nav {
 }
 #exampleFormControlSelect1 {
     background-color: #FFE08D;
+}
+.marginbottom50 {
+    margin-bottom: 50px;
+    margin-left: 20px;
 }
 /*footer (yes this code is garbage)*/
 #footer {
