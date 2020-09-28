@@ -86,39 +86,43 @@
     </svg> 
     </a>
 </nav>
-<!--body columns 4 & 8-->
-<!--col 4-->
+<!--body columns 2 & 9-->
+<!--col 2-->
 <div class="container">
-  <div class="row">
-    <div class="col-md-4">
-<!--vertical nav-->
-  <ul class="nav flex-column">
-      <li class="nav-item">
-      <a class="nav-link active" href="#"> <img src="images/icon-science.png" alt="science"> </a>
+<div class="row">
+  <div class="col-md-1 no-gutter"></div>
+  <div class="col-md-1">
+    <!--vertical nav-->
+    <ul class="nav flex-column paddingtop">
+      <li class="nav-item marginbottom">
+      <a class="nav-link active activebg" href="#"> <img src="images/icon-science.png" alt="science"> </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item marginbottom">
       <a class="nav-link" href="#"><img src="images/Icon-math.png" alt="math"></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item marginbottom">
       <a class="nav-link" href="#"><img src="images/Icon-socialstudies.png" alt="social studies"></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item marginbottom">
       <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="images/Icon-english.png" alt="reading"></a>
       </li>
-  </ul>
-    </div>
-<!--col 8-->
-<div class="col-md-8">
-<!--header-->
-  <div class="container bgheader">
-      <h1>LEARNING HUB</h1>
+    </ul>
   </div>
-<!--tabs-->
-  <div>
+
+  <!--col 10-->
+  <div class="col-md-10 no-gutter">
+    <!--header-->
+    <div class="container bgheader marginbottom">
+      <h1 class="bold">LEARNING HUB</h1>
+    </div>
+
+    <div class="container">
+    <!--tabs-->
+    <div class="marginbottom">
     <ul class="nav nav-fill">
         <p>Grade level:</p>
-        <li class="nav-item border">
-        <a class="nav-link active" href="#">K</a>
+        <li class="nav-item">
+        <a class="nav-link active yellowcircle" href="#">K</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="#">1</a>
@@ -136,9 +140,103 @@
         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">5</a>
         </li>
     </ul>
+    </div>
+  <!--div in div welcome/profiles-->
+  <div class="container marginbottom">
+  <div class="row">
+    <div class="card-deck">
+      <div class="card welcomebg cardshadow" data-aos="flip-up">
+        <div class="card-body">
+            <h5 class="card-title">Welcome to Kindergarten Science!</h5>
+        </div>
+      </div>
+
+      <div class="card text-center cardshadow cardbg" data-aos="flip-up">
+        <div class="profileimg">
+          <img src="images/mr-jones.png" alt="Mr. Jones" width="94px">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Ask Mr. Jones</h5>
+        </div>
+      </div>
+      
+      <div class="card text-center cardshadow cardbg" data-aos="flip-up">
+        <div class="profileimg">
+          <img src="images/ms-katie.png" alt="Ms. Katie" width="94px">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Ask Ms. Katie</h5>
+        </div>
+      </div>
+
+      <div class="card text-center cardshadow cardbg" data-aos="flip-up">
+        <div class="profileimg">
+          <img src="images/ms-sarah.png" alt="Ms. Sarah" width="94px">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Ask Ms. Sarah</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--lessons-->
+  <div class="greybg paddingtop20">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Lessons</h6>
+        </div>
+        <div class="col-md-6">
+          <a href=""> <h6 class="text-right">View All</h6> </a>
+        </div>
+      </div>
+
+        <div class="container">
+          <div class="row marginbottom">
+            <div class="col-md-12 whitebg paddingaround align-items-center">
+              <p>Tornadoes In Nature II</p>
+              <button type="button" class="datebutton"><p class="text-muted">09/09/20</p></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row marginbottom">
+            <div class="col-md-12 whitebg paddingaround align-items-center">
+              <p>Tornadoes In Nature I</p>
+              <button type="button" class="datebutton"><p class="text-muted">09/08/20</p></button>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  </div>
   </div>
 </div>
 </div>
+<!--footer-->
+<div>
+  <div id="footer">
+    <div class="footerAddy">
+      <div>
+        <img src="./images/wizard-logo.png" alt="">
+      </div>
+      <div>
+        <h3>West Hollywood Elementary</h3>
+        <p>970 Hammond St.<br/>West Hollywood, California 90069</p>
+      </div>
+    </div>
+    <div id="footerSocial">
+        <h3>Follow Us</h3>
+        <div class="socialIcons">
+          <a href="https://twitter.com/WestHollywoodE1"><img src="./images/Twitter.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/whewizards/"><img src="./images/Insta.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/WeHoElementary/"><img src="./images/facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+  </div>
 </div>
 <!--script-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

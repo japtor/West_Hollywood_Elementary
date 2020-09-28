@@ -1,5 +1,5 @@
 /*text*/
-h1, h2, h3, h4, h5 {font-family: 'Quicksand', sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Quicksand', sans-serif;}
 body, a, .card-subtitle {font-family: 'Montserrat', sans-serif;}
 /*background*/
 body {
@@ -14,15 +14,36 @@ body {
 nav {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 .wizard-logo {
     width: 175px;
 }
 /*vertical nav*/
-.flex-column {
+.col-md-1 {
     background-color: #FFE08D;
 }
+.paddingtop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.activebg {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*gutter
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  } */
 /*header*/
 .bgheader {
     background-image: url(../images/bgheader.png);
@@ -32,8 +53,118 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/*tabs*/
-.border {
-    border: solid 1px  #FFE08D;
-    border-radius: 100px;
+.marginbottom {
+    margin-bottom: 20px;
 }
+.bold {
+    font-weight: bold;
+}
+/*tabs*/
+.yellowcircle {
+    border: solid 3px #FFE08D;
+    border-radius: 100px;
+    width: 10%;
+}
+/*lessons*/
+.greybg {
+    background-color: #F4F4F4;
+}
+.cardshadow  {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px -4px 10px rgba(0, 0, 0, 0.15);
+}
+.paddingtop20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.whitebg {
+    background-color: white;
+}
+.paddingaround {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+.profileimg {
+    padding-top: 30px;
+}
+.marginleft {
+    margin-left: 60%;
+}
+.datebutton {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 0.475rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    background-color: #FFE08D;
+    border: none;
+    margin-left: 60%;
+}
+.text-muted {
+    font-weight: lighter;
+}
+/*footer (yes this code is garbage)*/
+#footer {
+    height: auto;
+    background-color: #7E82F9;
+    background-image: url("../images/footer-ruler.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding: 1rem 5% 50px 10%;
+    margin-top: 1em;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #footer h3, #footer p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer h3 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  #footer p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .footerAddy {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footerAddy img {
+    height: 6.5rem;
+  }
+  
+  .footerAddy>div, #footerSocial {
+    padding: .5rem;
+  }
+  
+  #footerSocial {
+    text-align: center;
+  }
+  
+  #footerSocial img {
+    padding: .25rem;
+  }
+  
+  .socialIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
