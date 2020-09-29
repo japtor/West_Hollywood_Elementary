@@ -95,16 +95,16 @@
     <!--vertical nav-->
     <ul class="nav flex-column paddingtop">
       <li class="nav-item marginbottom">
-      <a class="nav-link active activebg" href="#"> <img src="images/icon-science.png" alt="science"> </a>
+      <a class="nav-link active activebg" href="#"> <img src="images/icon-science.png" alt="science" data-toggle="tooltip" data-placement="right" title="Science"> </a>
       </li>
       <li class="nav-item marginbottom">
-      <a class="nav-link" href="#"><img src="images/Icon-math.png" alt="math"></a>
+      <a class="nav-link" href="#"><img src="images/Icon-math.png" alt="math" data-toggle="tooltip" data-placement="right" title="Math"></a>
       </li>
       <li class="nav-item marginbottom">
-      <a class="nav-link" href="#"><img src="images/Icon-socialstudies.png" alt="social studies"></a>
+      <a class="nav-link" href="#"><img src="images/Icon-socialstudies.png" alt="social studies" data-toggle="tooltip" data-placement="right" title="Social Studies"></a>
       </li>
       <li class="nav-item marginbottom">
-      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="images/Icon-english.png" alt="reading"></a>
+      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="images/Icon-english.png" alt="reading" data-toggle="tooltip" data-placement="right" title="Reading & Writing"></a>
       </li>
     </ul>
   </div>
@@ -327,6 +327,11 @@
           $("#videoModal iframe").removeAttr("src allow");
       });
   });
+  </script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   </script>
 </body>
 </html>
