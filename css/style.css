@@ -31,6 +31,7 @@ nav {
 }
 .ruler {
     margin-bottom: 0;
+    object-fit: contain;
 }
 .carousel-caption {
     background-color: rgba(255, 255, 255, 0.692);
@@ -57,7 +58,6 @@ nav {
     background-size: contain;
     padding-top: 75px;
     padding-bottom: 75px;
-    padding-right: 50px;
     padding-left: 50px;
 }
 .challengebookmark img {
@@ -128,7 +128,7 @@ nav {
     font-weight: 600;
   } 
   #footer p {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
   } 
   .footerAddy {
@@ -146,34 +146,43 @@ nav {
   }
   #footerSocial img {
     padding: .25rem;
+    width: 35px;
   }
   .socialIcons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-/*Media 
-
+/*Media
 @media (min-width: 768px) {
     .row {
         flex-direction: column;
     }
-    .challengebookmark {
-        transform: rotate(90deg);
-    }
-    .challengebookmark img {
-        width: 150%;
-    }
-    .containermargintop {
-        margin-top: 0;
-    }
-    .bgchallengesquare {
+    .bg-challengesquare {
+        background-position: center;
+        background-size: contain;
         padding-top: 0;
         padding-bottom: 0;
-        padding-right: 0;
         padding-left: 0;
-        flex-wrap: nowrap;
+    }
+    .challengebookmark, .mentorbookmark, .covidbookmark {
+        transform: rotate(90deg);
+    }
+    .containermargintop {
+        margin-top: 10px;
+    }
+    .mentorbookmark img {
+        width: 80%;
+    }
+    .mentortxt {
+        text-align: center;
+    }
+    .covidbookmark {
+        margin-top: 30%;
+    }
+    .bg-covidsquare {
+        background-size: contain;
     }
 }
-
 */
+
