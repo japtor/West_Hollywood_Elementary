@@ -19,6 +19,24 @@ nav {
 .wizard-logo {
     width: 175px;
 }
+.breadcrumb nav{
+    background-color: none;
+}
+.nav.nav-fill>p {
+    padding-right: 3vw;
+}
+.nav.nav-fill>li>a {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: .75rem;
+    border-radius: 100%;
+    color: black;
+}
+.nav.nav-fill>li>a.active {
+    background-color: #FFE08D;
+    color: black;
+}
 /*vertical nav*/
 .col-md-1 {
     background-color: #FFE08D;
@@ -58,12 +76,8 @@ nav {
 .bold {
     font-weight: bold;
 }
-/*tabs
-.yellowcircle {
-    border: solid 3px #FFE08D;
-    border-radius: 100px;
-    width: 10%;
-} */
+/*tabs*/
+
 
 /*lessons*/
 .greybg {
